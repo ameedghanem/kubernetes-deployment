@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: music-deployment
+
+  labels:
+    app: spring-music
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-music
+  template:
+    metadata:
+      labels:
+        app: spring-music
+    spec:
+      containers:
+      - name: spring-music
+        image: yanivomc/spring-music:latest
+        ports:
+         - containerPort: 8090
+
+---         
+apiVersion: v1
+kind: Service
+metadata:
+  name: music-deployment-service
+  labels:
+    app: spring-music
+spec:
+  ports:
+  - port: 8090
+    targetPort: 8080
+  type: ClusterIP
+  selector:
+    app: spring-music
+
+ 
