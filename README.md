@@ -1,6 +1,7 @@
-## About
-	running the spring-music image
-
+## Kubernetes Final Task
+	A deployment and service for the image yanivomic/spring-music:latest in kubernetes.</br>
+	It also creates an Ingress to access the service.
+	
 ## Prerequisties
 	docker
 	kubernetes
@@ -9,9 +10,5 @@
 ## Deployment
 
 ```
-$ kubectl create deployment spring-music --image=yanivomc/spring-music:latest
-$ kubectl get deployments
-$ kubectl expose deployment spring-music --port=8090 --target-port=8080
-$ kubectl create -f ingress.yaml
-$ curl -l http://127.0.0.1/music
+$ kubectl apply -f spring-music-deployment.yml
 ```
