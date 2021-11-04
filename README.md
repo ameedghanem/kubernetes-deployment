@@ -17,5 +17,7 @@ $ cd kubernetes-hw/
 ## Deployment
 
 ```
-$ kubectl apply -f spring-music-deployment.yml
+$ kubectl apply -f spring-music-deployment.yml && kubectl apply -f ingress.yml
 ```
+
+### To view the app browse to http://127.0.0.1/music
