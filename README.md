@@ -6,7 +6,14 @@ It also creates an Ingress to access the service.
 	docker
 	kubernetes
  
+## Installation
 
+```
+$ git clone https://github.com/ameedghanem/kubernetes-hw.git
+  ...
+$ cd kubernetes-hw/
+```
+	
 ## Deployment
 
 ```
