@@ -23,4 +23,4 @@ $ kubectl apply -f spring-music-deployment.yml && kubectl apply -f ingress.yml
 
 ### To view the app, browse to http://127.0.0.1/music
 You should see the following page:
-![]()
+![spring-music screentShot](https://github.com/ameedghanem/kubernetes-hw/blob/main/logo/spring%20music.PNG)
