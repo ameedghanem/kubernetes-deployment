@@ -17,7 +17,8 @@ $ cd kubernetes-hw/
 ## Deployment
 
 ```
-$ kubectl apply -f spring-music-deployment.yml && kubectl apply -f ingress.yml
+$ kubectl apply -f spring-music-deployment.yml 
+$ kubectl apply -f ingress.yml
 ```
 ---
 
